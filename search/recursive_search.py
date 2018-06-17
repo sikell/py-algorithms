@@ -1,3 +1,5 @@
+# Find a key value in the given integer array.
+# The array must be sorted ascending.
 def recursive_search(array, key):
     return search(array, 0, len(array) - 1, key)
 
