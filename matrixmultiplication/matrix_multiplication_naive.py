@@ -1,3 +1,6 @@
+import matrixmultiplication.util.matrix_print as p
+
+
 def naive_multiplication(n, a, b):
     c = []
     i = 0
@@ -15,7 +18,12 @@ def naive_multiplication(n, a, b):
     return c
 
 
-m1 = [[1, 3, 4], [4, 6, 0], [1, 1, 2]]
-m2 = [[4, 2, 1], [5, 5, 2], [0, 0, 1]]
-m = naive_multiplication(3, m1, m2)
-print(m)
+n = 3
+m1 = [[1, 3, 4],
+      [4, 6, 0],
+      [1, 1, 2]]
+m2 = [[4, 2, 1],
+      [5, 5, 2],
+      [0, 0, 1]]
+m = naive_multiplication(n, m1, m2)
+print(p.matrix_print(m))
